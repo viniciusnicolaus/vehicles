@@ -52,14 +52,14 @@ docker-compose up
 
 This will start the vehicle-api service on port 8080 and the db service on port 5432.
 
-## Running the Application
+Running the Application
 Accessing the API
 Once the services are up and running, the API will be accessible at:
 ```bash
 http://localhost:8080
 ```
 
-## API Endpoints
+API Endpoints
 Here are the primary endpoints provided by the API:
 
 Vehicles
@@ -75,21 +75,22 @@ POST /purchases - Purchase a vehicle (authenticated users only)
 - Authentication
 Authentication is managed by Auth0. Ensure you have registered and obtained the necessary tokens.
 
-## Testing
+
+Testing
 Running Tests
 To run the tests, use the following command:
 ```bash
 ./gradlew test
 ```
 
-## CI/CD
+CI/CD
 Continuous Integration
 This project uses GitHub Actions for CI. The workflow file is located in .github/workflows/ci.yml.
 
 Continuous Deployment
 Automated deployment is configured to deploy to the production environment upon merging to the main branch. Ensure your deployment server is configured to pull the latest changes and restart the application.
 
-## Technologies Used
+- Technologies Used
 - Kotlin
 - Spring Boot
 - PostgreSQL
