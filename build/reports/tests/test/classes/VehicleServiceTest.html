@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.003s</div>
+<div class="counter">0.001s</div>
 <p>duration</p>
 </div>
 </td>
@@ -520,7 +520,7 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 </thead>
 <tr>
 <td class="failures">should find vehicle by id()</td>
-<td class="failures">0.003s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -538,19 +538,18 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>12:27:28.547 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-12:27:28.552 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-12:27:28.566 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [VehicleServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-12:27:28.572 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [VehicleServiceTest], using SpringBootContextLoader
-12:27:28.573 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [VehicleServiceTest]: class path resource [VehicleServiceTest-context.xml] does not exist
-12:27:28.573 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [VehicleServiceTest]: class path resource [VehicleServiceTestContext.groovy] does not exist
-12:27:28.573 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [VehicleServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-12:27:28.591 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [VehicleServiceTest]
-12:27:28.636 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [VehicleServiceTest]: using defaults.
-12:27:28.636 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-12:27:28.645 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d8062d2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e63ec0b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3b956878, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@36546a22, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@285c08c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@295eaa7c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3918c187, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2c88b9fc, org.springframework.test.context.event.EventPublishingTestExecutionListener@64dafeed, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@388ba540, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47605f2f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ece4966, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1dd0e7c4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7894f09b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3d484181]
-12:27:28.647 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@652a7737 testClass = VehicleServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5b7ea70d testClass = VehicleServiceTest, locations = '{}', classes = '{class com.fiap.vehicle.VehiclesApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@484094a5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6f27a732], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-12:27:28.948 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for VehicleRepository name=#1
+<pre>16:39:45.809 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:39:45.816 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:39:45.836 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [VehicleServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:39:45.844 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [VehicleServiceTest], using SpringBootContextLoader
+16:39:45.846 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [VehicleServiceTest]: class path resource [VehicleServiceTest-context.xml] does not exist
+16:39:45.846 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [VehicleServiceTest]: class path resource [VehicleServiceTestContext.groovy] does not exist
+16:39:45.846 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [VehicleServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:39:45.945 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [VehicleServiceTest]: using defaults.
+16:39:45.945 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:39:45.954 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@50fe837a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a62c01e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a8fa663, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5ce33a58, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@78a287ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@546ccad7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5357c287, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1623134f, org.springframework.test.context.event.EventPublishingTestExecutionListener@7a527389, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@485a3466, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25748410, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b43529a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4264b240, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b04476e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ad10c1a]
+16:39:45.956 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5d018107 testClass = VehicleServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6cbcf243 testClass = VehicleServiceTest, locations = '{}', classes = '{class com.fiap.vehicle.VehiclesApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5bf8fa12, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6eb2384f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12f9af83, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@10cf09e8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6e4566f1, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7690781], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+16:39:46.267 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for VehicleRepository name=#1
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -560,15 +559,15 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.6)
 
-2024-05-30 12:27:29.412  INFO 25007 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 25007 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
-2024-05-30 12:27:29.412  INFO 25007 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;prod&quot;
-2024-05-30 12:27:29.711  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-30 12:27:29.742  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
-2024-05-30 12:27:30.261  INFO 25007 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-30 12:27:30.297  INFO 25007 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2024-05-30 12:27:30.329  INFO 25007 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-05-30 12:27:30.400  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-30 12:27:30.408  WARN 25007 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2024-05-30 16:39:47.296  INFO 45090 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 45090 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
+2024-05-30 16:39:47.298  INFO 45090 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;test&quot;
+2024-05-30 16:39:47.688  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30 16:39:47.716  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2024-05-30 16:39:48.261  INFO 45090 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30 16:39:48.298  INFO 45090 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-05-30 16:39:48.326  INFO 45090 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-30 16:39:48.384  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30 16:39:48.392  WARN 45090 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at com.zaxxer.hikari.util.DriverDataSource.&lt;init&gt;(DriverDataSource.java:110) ~[HikariCP-4.0.3.jar:na]
@@ -701,14 +700,14 @@ java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, j
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2024-05-30 12:27:30.418  INFO 25007 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-05-30 12:27:30.715  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-30 12:27:30.718 ERROR 25007 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:30.719  WARN 25007 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:30.727  INFO 25007 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2024-05-30 16:39:48.404  INFO 45090 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-05-30 16:39:48.602  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30 16:39:48.604 ERROR 45090 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:48.605  WARN 45090 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:48.610  INFO 45090 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-05-30 12:27:30.743 ERROR 25007 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2024-05-30 16:39:48.623 ERROR 45090 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -846,7 +845,7 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.24.jar:5.3.24]
 	... 105 common frames omitted
 
-2024-05-30 12:27:30.747 ERROR 25007 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@1d8062d2] to prepare test instance [VehicleServiceTest@7f8cd5fc]
+2024-05-30 16:39:48.625 ERROR 45090 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@50fe837a] to prepare test instance [VehicleServiceTest@3e1c5e0d]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
@@ -996,13 +995,13 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.6)
 
-2024-05-30 12:27:30.788  INFO 25007 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 25007 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
-2024-05-30 12:27:30.788  INFO 25007 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;prod&quot;
-2024-05-30 12:27:30.878  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-30 12:27:30.882  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
-2024-05-30 12:27:30.986  INFO 25007 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-30 12:27:30.988  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-05-30 12:27:30.990  WARN 25007 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2024-05-30 16:39:48.646  INFO 45090 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 45090 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
+2024-05-30 16:39:48.647  INFO 45090 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;test&quot;
+2024-05-30 16:39:48.796  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30 16:39:48.798  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interfaces.
+2024-05-30 16:39:48.881  INFO 45090 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30 16:39:48.883  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-30 16:39:48.884  WARN 45090 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at com.zaxxer.hikari.util.DriverDataSource.&lt;init&gt;(DriverDataSource.java:110) ~[HikariCP-4.0.3.jar:na]
@@ -1135,14 +1134,14 @@ java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, j
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2024-05-30 12:27:30.990  INFO 25007 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-05-30 12:27:30.995  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-05-30 12:27:30.996 ERROR 25007 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:30.996  WARN 25007 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:30.997  INFO 25007 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2024-05-30 16:39:48.886  INFO 45090 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-05-30 16:39:48.898  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-30 16:39:48.899 ERROR 45090 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:48.899  WARN 45090 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:48.900  INFO 45090 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-05-30 12:27:30.999 ERROR 25007 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2024-05-30 16:39:48.903 ERROR 45090 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -1280,7 +1279,7 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.24.jar:5.3.24]
 	... 105 common frames omitted
 
-2024-05-30 12:27:31.001 ERROR 25007 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@1d8062d2] to prepare test instance [VehicleServiceTest@c7cf8c4]
+2024-05-30 16:39:48.916 ERROR 45090 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@50fe837a] to prepare test instance [VehicleServiceTest@74ed3be4]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
@@ -1430,13 +1429,13 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.6)
 
-2024-05-30 12:27:31.018  INFO 25007 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 25007 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
-2024-05-30 12:27:31.018  INFO 25007 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;prod&quot;
-2024-05-30 12:27:31.069  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-30 12:27:31.072  INFO 25007 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
-2024-05-30 12:27:31.134  INFO 25007 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-30 12:27:31.136  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-05-30 12:27:31.137  WARN 25007 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2024-05-30 16:39:48.952  INFO 45090 --- [    Test worker] VehicleServiceTest                       : Starting VehicleServiceTest using Java 17.0.10 on BR0C02H90PY0KPF with PID 45090 (started by vinfsantos in /Users/vinfsantos/Desktop/Workspace/vehicles)
+2024-05-30 16:39:48.952  INFO 45090 --- [    Test worker] VehicleServiceTest                       : The following 1 profile is active: &quot;test&quot;
+2024-05-30 16:39:49.086  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30 16:39:49.088  INFO 45090 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2024-05-30 16:39:49.157  INFO 45090 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30 16:39:49.159  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-30 16:39:49.162  WARN 45090 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at com.zaxxer.hikari.util.DriverDataSource.&lt;init&gt;(DriverDataSource.java:110) ~[HikariCP-4.0.3.jar:na]
@@ -1569,14 +1568,14 @@ java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, j
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2024-05-30 12:27:31.137  INFO 25007 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-05-30 12:27:31.142  INFO 25007 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-05-30 12:27:31.142 ERROR 25007 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:31.142  WARN 25007 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
-2024-05-30 12:27:31.143  INFO 25007 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2024-05-30 16:39:49.164  INFO 45090 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-05-30 16:39:49.174  INFO 45090 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-30 16:39:49.174 ERROR 45090 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:49.175  WARN 45090 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
+2024-05-30 16:39:49.176  INFO 45090 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-05-30 12:27:31.146 ERROR 25007 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2024-05-30 16:39:49.178 ERROR 45090 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, jdbc:postgresql://db:5432/vehicle
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -1714,7 +1713,7 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.24.jar:5.3.24]
 	... 105 common frames omitted
 
-2024-05-30 12:27:31.147 ERROR 25007 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@1d8062d2] to prepare test instance [VehicleServiceTest@b5d7233]
+2024-05-30 16:39:49.180 ERROR 45090 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@50fe837a] to prepare test instance [VehicleServiceTest@375682a5]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
@@ -1866,7 +1865,7 @@ Caused by: java.lang.RuntimeException: Driver org.h2.Driver claims to not accept
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at May 30, 2024, 12:27:31 PM</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at May 30, 2024, 4:39:49 PM</p>
 </div>
 </div>
 </body>
