@@ -1,4 +1,4 @@
-# Vehicle Resale Platform
+# Vehicle Resale Platform - FIAP
 
 This is a Vehicle Resale Platform API built with Kotlin using Hexagonal Architecture. The project includes functionalities for vehicle registration, editing, listing vehicles for sale and sold, and purchasing vehicles for registered users. User authentication is managed by Auth0.
 
