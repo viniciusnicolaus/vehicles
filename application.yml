@@ -4,3 +4,17 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://dev-6uruqusryv47zcq3.us.auth0.com/
+  datasource:
+    url: jdbc:postgresql://db:5432/vehicle
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: prod
+
+
+
+
